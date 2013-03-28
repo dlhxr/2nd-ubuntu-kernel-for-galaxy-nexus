@@ -60,6 +60,9 @@ on boot
 on fs
 	mkdir /factory 0775 radio radio
 	mount_all /fstab.tuna
+	exec /sbin/busybox mount -t ext4 -o ro /data/media/rom/ubuntu/ubuntu.img /system
+	mkdir /data/media/rom/ubuntu/cache 0775 system cache
+	exec /sbin/busybox mount --bind /data/media/2nd/cache /cache
 	setprop ro.crypto.fuse_sdcard true
 
 # change permissions for mtd device
