@@ -8,4 +8,4 @@ system   /data/media/rom/ubuntu/ubuntu.img
 data     /data
 cache    /data/media/rom/ubuntu/cache (It seems ubuntu doesn't use cache partition)
 
-Based on 3/27/2012 ubuntu kernel in quantal-preinstalled-armel+maguro.zip
+Based on 3/27/2013 ubuntu kernel in quantal-preinstalled-armel+maguro.zip
