@@ -1,0 +1,6 @@
+ui_print(" I9250 KERNEL");
+ui_print(" FLASHING ");
+show_progress(0.100000, 0);
+package_extract_file("boot.img", "/dev/block/platform/omap/omap_hsmmc.0/by-name/boot");
+show_progress(0.2, 10);
+ui_print(" DONE. ");
